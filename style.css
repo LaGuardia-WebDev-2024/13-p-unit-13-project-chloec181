@@ -1,3 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdDXn-0lG1ym-zHe1EDJ5LF4pecZO3-wcoug&s");
+  text-align: center;
+  
+}
+h1 {
+  color: #3a3a3a;
+}
+button {
+  background-color: #90ee90;
+  border: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+img {
+  width: 200px;
+}
+
 #movie-result {
   background: rgb(244, 98, 181);
   border: 5px solid black;
