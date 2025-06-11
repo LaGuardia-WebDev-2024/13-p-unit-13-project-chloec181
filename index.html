@@ -1,14 +1,14 @@
 <!-- Unit 13 Project
 Requirements
-[  ] Two Interactive Drop-down Inputs 
-[  ] Two Different jQuery Animation Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ y ] Two Interactive Drop-down Inputs 
+[ y ] Two Different jQuery Animation Methods 
+[ y ] Add Five CSS Declarations
+[ y ] Include Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Google Font
 [ no ] Feature 2 - Upload a Font
-[ no ] Feature 3 - .mouseover() Method
+[ yes ] Feature 3 - .mouseover() Method
 [ no ] Feature 4 - :hover Feature 
 [ no ] Feature 5 - Add an Additional Interactive Drop-down
 -->
@@ -23,35 +23,41 @@ Select ONE Additional Feature to Add
   <body>
     <h1>Quiz About [Me]</h1>
     <hr />
+    <img src="https://i.etsystatic.com/28810262/r/il/2fc5e0/5785166966/il_1080xN.5785166966_nvy4.jpg"/>
+    <img src="https://img.freepik.com/premium-vector/happy-star-emoji_78370-179.jpg" />
+    <img src="https://i.pinimg.com/564x/4d/75/02/4d7502126a314492e4c2ca93194bc284.jpg" />
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
-        🎥 What is my favorite movie?
+        🎥 What is my favorite game?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="game1">Devil May Cry</option>
+          <option value="game2">Life is Strange</option>
+          <option value="game3">Risk of Rain</option>
+          <option value="game4">Neva</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Check Game Answer</button>
     </form>
     <div id="movie-result"></div>
     <hr />
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite book?
+        📖 What is my favorite internet cat?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="cat1">DouDou</option>
+          <option value="cat2">Rigby</option>
+          <option value="cat3">Nala</option>
+          <option value="cat4">Maru</option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">Check Cat Answer</button>
     </form>
     <div id="book-result"></div>
+    
+  <img id="secret-img" src="https://i.ytimg.com/vi/rvX8cS-v2XM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCF0zNNCUpNmTYhJxWG7VWjmvmybA" width="200" />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       //Movie Question jQuery Code
@@ -61,10 +67,10 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
-          $("#movie-result").text("YESSSS!");
+        if (answer === "game1") {
+          $("#movie-result").text("YESS");
         } else {
-          $("#movie-result").text("Try Again!");
+          $("#movie-result").text("Try Again");
         }
       });
 
@@ -75,12 +81,16 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-result").text("YESSSS!");
+        if (answer === "cat2") {
+          $("#book-result").text("YESS");
         } else {
-          $("#book-result").text("Try Again!");
+          $("#book-result").text("Try Again");
         }
       });
+      
+      $("#secret-img").mouseover(function () {
+        alert("Rigby is coming for you 🐈");
+      }); 
     </script>
   </body>
 
