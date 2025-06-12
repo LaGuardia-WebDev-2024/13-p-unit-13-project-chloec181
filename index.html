@@ -68,9 +68,9 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "game1") {
-          $("#movie-result").text("YESS");
+          $("#movie-result").hide().text("YESS").fadeIn();
         } else {
-          $("#movie-result").text("Try Again");
+          $("#movie-result").hide().text("Try Again").fadeIn();
         }
       });
 
@@ -82,9 +82,9 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "cat2") {
-          $("#book-result").text("YESS");
+          $("#book-result").slideUp().text("YESS").slideDown();
         } else {
-          $("#book-result").text("Try Again");
+          $("#book-result").slideUp().text("Try Again").slideDown();
         }
       });
       
